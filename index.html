@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Employee Launch Challenge | VA Staffer</title>
+  <meta name="description" content="Join the free AI Employee Launch Challenge and learn how to define, position, and launch your first AI Employee — then get access to replays, resources, and support through AI Money Group." />
+  <meta property="og:title" content="AI Employee Launch Challenge | VA Staffer" />
+  <meta property="og:description" content="A free VA Staffer challenge that helps people launch their first AI Employee, then continue through AI Money Group and the managed AI Employee offer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ai-employee-launch-challenge.vercel.app/" />
+  <meta property="og:image" content="https://ai-employee-launch-challenge.vercel.app/assets/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Employee Launch Challenge | VA Staffer" />
+  <meta name="twitter:description" content="A free VA Staffer challenge that helps people launch their first AI Employee, then continue through AI Money Group and the managed AI Employee offer." />
+  <meta name="twitter:image" content="https://ai-employee-launch-challenge.vercel.app/assets/og-default.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0E1532;--navy2:#16214f;--deep:#233668;--off:#F7F7F9;--white:#fff;--lime:#B7EC60;--coral:#E77B61;--text:#24324d;--muted:#66728b;--line:#e6eaf1;--shadow:0 18px 50px rgba(14,21,50,.08);--radius:22px}
+    *{box-sizing:border-box}body{margin:0;font-family:'Inter',sans-serif;background:var(--off);color:var(--text);line-height:1.6}a{color:inherit}.container{width:min(calc(100% - 32px),1160px);margin:0 auto}
+    header{position:sticky;top:0;z-index:100;background:rgba(14,21,50,.94);color:var(--white);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}.header-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0}.logo img{display:block;height:44px;width:auto}.nav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.nav a{text-decoration:none;color:rgba(255,255,255,.84);font-size:.95rem}.nav a:hover{color:var(--lime)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at top right, rgba(183,236,96,.18), transparent 24%),linear-gradient(135deg,var(--navy) 0%,var(--navy2) 50%,#20346d 100%);color:var(--white);padding:92px 0 78px}.hero::before{content:"";position:absolute;right:-8px;bottom:-18px;width:min(28vw,300px);height:min(28vw,300px);background:url('https://ai.vastaffer.com/assets/brand/ai-persona-method-robot-wave.png') no-repeat bottom right / contain;opacity:.14;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.eyebrow{display:inline-block;margin-bottom:18px;padding:8px 16px;border-radius:999px;background:rgba(183,236,96,.12);color:var(--lime);font-size:.84rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.hero h1{margin:0 0 18px;max-width:11ch;font-size:clamp(3rem,6vw,5rem);line-height:.98;letter-spacing:-.045em}.hero p{max-width:62ch;margin:0 0 28px;font-size:1.08rem;color:rgba(255,255,255,.88)}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:12px;padding:15px 22px}.btn-primary{background:var(--lime);color:var(--navy)}.btn-secondary{background:rgba(255,255,255,.07);color:var(--white);border:1px solid rgba(255,255,255,.14)}
+    .signup-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.18);backdrop-filter:blur(10px)}.signup-card h3{margin:0 0 10px;color:var(--white);font-size:1.5rem}.signup-card p{margin:0 0 16px;color:rgba(255,255,255,.84)}.field{margin-bottom:14px}.input{width:100%;padding:14px 16px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.06);color:var(--white);font:inherit}.input::placeholder{color:rgba(255,255,255,.5)}.tiny{font-size:.88rem;color:rgba(255,255,255,.7)}
+    section{padding:74px 0}.section-head{max-width:840px;margin:0 auto 34px;text-align:center}.section-head h2{margin:0 0 12px;font-size:clamp(2rem,4vw,3rem);line-height:1.06;letter-spacing:-.03em;color:var(--navy)}.section-head p{margin:0;color:var(--muted);font-size:1.05rem}
+    .grid-4,.grid-3,.grid-2{display:grid;gap:22px}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card,.dark-card,.day-card,.quote-band,.offer-box{border-radius:var(--radius);padding:24px}.card,.day-card,.quote-band,.offer-box{background:var(--white);border:1px solid rgba(14,21,50,.08);box-shadow:var(--shadow)}.dark-card{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white);border:1px solid rgba(255,255,255,.08)}
+    .icon{width:46px;height:46px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(183,236,96,.22),rgba(231,123,97,.18));color:var(--navy);font-size:1.15rem;margin-bottom:14px;box-shadow:0 10px 22px rgba(14,21,50,.08)}.dark-card .icon{background:rgba(183,236,96,.18);color:var(--white);box-shadow:none}
+    h3{margin:0 0 10px;color:var(--navy);font-size:1.18rem;line-height:1.16}.dark-card h3{color:var(--lime)}.card p,.dark-card p,.day-card p,.quote-band p,.offer-box p{margin:0}
+    .day-card{position:relative;padding-left:82px}.day-number{position:absolute;left:24px;top:24px;width:42px;height:42px;border-radius:14px;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:800}
+    .quote-band{border-left:6px solid var(--coral)}.quote-band blockquote{margin:0 0 12px;color:var(--navy);font-size:clamp(1.5rem,3vw,2rem);line-height:1.16;font-weight:800;letter-spacing:-.03em}
+    .bullet-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}.bullet-list li{position:relative;padding-left:28px}.bullet-list li::before{content:'✓';position:absolute;left:0;top:0;color:var(--coral);font-weight:800}
+    .section-dark{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white)}.section-dark .section-head h2{color:var(--white)}.section-dark .section-head p{color:rgba(255,255,255,.8)}
+    footer{background:#101726;color:rgba(255,255,255,.82);text-align:center;padding:42px 20px;font-size:.95rem}.footer-nav{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}.footer-nav a{color:rgba(255,255,255,.88);text-decoration:none}.footer-nav a:hover{color:var(--lime)}
+    @media (max-width:1024px){.hero-grid,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr 1fr}.hero-grid{grid-template-columns:1fr}}@media (max-width:768px){section{padding:60px 0}.header-inner,.hero-grid,.grid-2,.grid-3,.grid-4{display:grid;grid-template-columns:1fr}.hero h1{max-width:10ch}.hero p,.section-head p{font-size:1rem}.day-card{padding-left:24px;padding-top:78px}.day-number{left:24px;top:24px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="/"><img src="https://ai.vastaffer.com/assets/logos/va-staffer-logo-header.webp" alt="VA Staffer"></a>
+      <nav class="nav">
+        <a href="#days">The Challenge</a>
+        <a href="#group">AI Money Group</a>
+        <a href="#backend">Managed AI Employees</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Free Challenge • VA Staffer • AI Employees</div>
+        <h1>Launch Your First AI Employee</h1>
+        <p>Join the free AI Employee Launch Challenge and learn how to define the role, shape the personality, choose the workflow, and position your first AI Employee as a real business asset — without getting buried in technical complexity.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/thank-you/">Join The Free Challenge</a>
+          <a class="btn btn-secondary" href="#days">See The 5 Days</a>
+        </div>
+      </div>
+      <aside class="signup-card">
+        <h3>What they get for free</h3>
+        <p>A practical, beginner-friendly challenge that helps them go from “AI Employees sound interesting” to “I can actually see how this works.”</p>
+        <div class="field"><input class="input" placeholder="First name"></div>
+        <div class="field"><input class="input" placeholder="Email address"></div>
+        <div class="field"><input class="input" placeholder="What kind of AI Employee do you want to launch?"></div>
+        <a class="btn btn-primary" style="width:100%;text-align:center" href="/thank-you/">Start The Free Challenge</a>
+        <div class="tiny" style="margin-top:12px">Demo funnel build: this button currently routes to the internal thank-you page for the sample flow.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Why this works as a front-end funnel</h2>
+        <p>A lot of people like the idea of AI Employees, but they still need help making the concept feel real. A challenge gives them quick belief, momentum, and a logical next step.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="icon">🧲</div><h3>Easy entry point</h3><p>It is much easier to say yes to a free challenge than a full implementation offer cold.</p></div>
+        <div class="card"><div class="icon">🔥</div><h3>Quick wins</h3><p>They define the role, personality, and first workflow fast enough to start believing this could actually work.</p></div>
+        <div class="card"><div class="icon">🚀</div><h3>Natural ascension</h3><p>Once they see the opportunity, the next step becomes obvious: replays, resources, and eventually a managed AI Employee.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="days">
+    <div class="container">
+      <div class="section-head">
+        <h2>What happens inside the challenge</h2>
+        <p>The challenge is designed to be practical, not overwhelming. Each day moves them closer to a real AI Employee they can picture, use, or sell.</p>
+      </div>
+      <div class="grid-2">
+        <div class="day-card"><div class="day-number">1</div><h3>Choose the role</h3><p>Pick what kind of AI Employee they want to launch and what business job it should own first.</p></div>
+        <div class="day-card"><div class="day-number">2</div><h3>Define the personality</h3><p>Shape the tone, behavior, boundaries, and identity so it feels consistent instead of generic.</p></div>
+        <div class="day-card"><div class="day-number">3</div><h3>Choose the workflow</h3><p>Decide what one useful thing the AI Employee should actually do in a real business setting.</p></div>
+        <div class="day-card"><div class="day-number">4</div><h3>Map the launch version</h3><p>Outline the memory, the channel, the use case, and the deliverables so it starts looking like a deployable asset.</p></div>
+        <div class="day-card"><div class="day-number">5</div><h3>Position the opportunity</h3><p>Show how this becomes an internal asset, a client deliverable, or a packaged AI Employee offer.</p></div>
+        <div class="day-card"><div class="day-number">6</div><h3>Invite the next step</h3><p>Move them into the low-ticket continuity offer and then toward the fully managed AI Employee solution.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="group" class="section-dark">
+    <div class="container">
+      <div class="section-head">
+        <h2>The first upsell: AI Money Group</h2>
+        <p>The free challenge builds momentum. AI Money Group turns that momentum into continuity.</p>
+      </div>
+      <div class="grid-2">
+        <div class="dark-card"><div class="icon">🎥</div><h3>$49/month for replays and resources</h3><p>This is the easy next step after the free challenge. It gives them the replays, supporting materials, and a reason to stay in the ecosystem instead of disappearing after day five.</p></div>
+        <div class="dark-card"><div class="icon">📚</div><h3>Why this upsell fits</h3><p>It is low friction, easy to explain, and gives them a place to keep learning while the bigger AI Employee offer keeps ripening in the background.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="backend">
+    <div class="container">
+      <div class="section-head">
+        <h2>The backend offer: get an AI Employee</h2>
+        <p>The challenge gets them interested. AI Money Group keeps them engaged. The real backend is the fully managed pre-built AI Employee offer that solves the implementation problem for them.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="icon">🤖</div><h3>Managed AI Employee</h3><p>A fully managed, pre-built AI Employee with a real role, real skills, memory, and a business purpose.</p></div>
+        <div class="card"><div class="icon">🧰</div><h3>Pre-built skill stack</h3><p>Instead of starting from scratch, they step into a more complete setup with proven capabilities and a clearer operating model.</p></div>
+        <div class="card"><div class="icon">📈</div><h3>Business-ready implementation</h3><p>The offer moves them from concept to execution: channel, workflow, role, memory, and ongoing support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="quote-band">
+        <blockquote>The challenge is free because the challenge is not the product. The challenge is the bridge.</blockquote>
+        <p>It bridges the gap between curiosity and implementation — and that is what makes it such a strong front-end funnel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>What the funnel path looks like</h2>
+        <p>Simple, clean, and easy for the buyer to understand.</p>
+      </div>
+      <div class="grid-3">
+        <div class="offer-box"><h3>Step 1: Free challenge</h3><p>Get them to join, learn, and believe.</p></div>
+        <div class="offer-box"><h3>Step 2: AI Money Group</h3><p>Offer the $49/month continuity for replays and resources.</p></div>
+        <div class="offer-box"><h3>Step 3: Get an AI Employee</h3><p>Move them into the fully managed, pre-built AI Employee offer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="#days">The Challenge</a>
+      <a href="#group">AI Money Group</a>
+      <a href="#backend">Get an AI Employee</a>
+    </div>
+    <div>Built by Beau for VA Staffer • Demo landing page for a full challenge funnel.</div>
+  </footer>
+</body>
+</html>
